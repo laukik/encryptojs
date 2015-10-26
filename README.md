@@ -6,7 +6,7 @@ A utility for creating hash for data.
 init the crypt 
 ```javascript
 
-var encrypto = require('../lib/encrypto');
+var encrypto = require('encryptojs');
 var enc = new encrypto();
 
 
@@ -33,7 +33,7 @@ init method will initilise with following:
  	algorithm_hash : {
  		info : "hashing algorithm that will be used for data hashing", 
  		default : "sha256",
- 		valid_values : [ 'DSA','DSA-SHA','DSA-SHA1','DSA-SHA1-old','RSA-MD4','RSA-MD5','RSA-MDC2','RSA-RIPEMD160','RSA-SHA','RSA-SHA1','RSA-SHA1-2','RSA-SHA224','RSA-SHA256','RSA-SHA384','RSA-SHA512','dsaEncryption','dsaWithSHA','dsaWithSHA1','dss1','ecdsa-with-SHA1','md4','md4WithRSAEncryption','md5','md5WithRSAEncryption','mdc2',='mdc2WithRSA','ripemd','ripemd160','ripemd160WithRSA','rmd160','sha','sha1','sha1WithRSAEncryption','sha224','sha224WithRSAEncryption','sha256','sha256WithRSAEncryption','sha384','sha384WithRSAEncryption','sha512','sha512WithRSAEncryption','shaWithRSAEncryption',l2-md5','ssl3-md5','ssl3-sha1','whirlpool' ],
+ 		valid_values : "[ 'DSA','DSA-SHA','DSA-SHA1','DSA-SHA1-old','RSA-MD4','RSA-MD5','RSA-MDC2','RSA-RIPEMD160','RSA-SHA','RSA-SHA1','RSA-SHA1-2','RSA-SHA224','RSA-SHA256','RSA-SHA384','RSA-SHA512','dsaEncryption','dsaWithSHA','dsaWithSHA1','dss1','ecdsa-with-SHA1','md4','md4WithRSAEncryption','md5','md5WithRSAEncryption','mdc2',='mdc2WithRSA','ripemd','ripemd160','ripemd160WithRSA','rmd160','sha','sha1','sha1WithRSAEncryption','sha224','sha224WithRSAEncryption','sha256','sha256WithRSAEncryption','sha384','sha384WithRSAEncryption','sha512','sha512WithRSAEncryption','shaWithRSAEncryption',l2-md5','ssl3-md5','ssl3-sha1','whirlpool' ]",
  		type :'String'
  	},
  	radix_args :{
@@ -45,7 +45,7 @@ init method will initilise with following:
  	algorithm_salt : {
  		info : "hashing algorithm that will be used for salt hashing", 
  		default : "md5",
- 		valid_values : [ 'DSA','DSA-SHA','DSA-SHA1','DSA-SHA1-old','RSA-MD4','RSA-MD5','RSA-MDC2','RSA-RIPEMD160','RSA-SHA','RSA-SHA1','RSA-SHA1-2','RSA-SHA224','RSA-SHA256','RSA-SHA384','RSA-SHA512','dsaEncryption','dsaWithSHA','dsaWithSHA1','dss1','ecdsa-with-SHA1','md4','md4WithRSAEncryption','md5','md5WithRSAEncryption','mdc2',='mdc2WithRSA','ripemd','ripemd160','ripemd160WithRSA','rmd160','sha','sha1','sha1WithRSAEncryption','sha224','sha224WithRSAEncryption','sha256','sha256WithRSAEncryption','sha384','sha384WithRSAEncryption','sha512','sha512WithRSAEncryption','shaWithRSAEncryption',l2-md5','ssl3-md5','ssl3-sha1','whirlpool' ],
+ 		valid_values : "[ 'DSA','DSA-SHA','DSA-SHA1','DSA-SHA1-old','RSA-MD4','RSA-MD5','RSA-MDC2','RSA-RIPEMD160','RSA-SHA','RSA-SHA1','RSA-SHA1-2','RSA-SHA224','RSA-SHA256','RSA-SHA384','RSA-SHA512','dsaEncryption','dsaWithSHA','dsaWithSHA1','dss1','ecdsa-with-SHA1','md4','md4WithRSAEncryption','md5','md5WithRSAEncryption','mdc2',='mdc2WithRSA','ripemd','ripemd160','ripemd160WithRSA','rmd160','sha','sha1','sha1WithRSAEncryption','sha224','sha224WithRSAEncryption','sha256','sha256WithRSAEncryption','sha384','sha384WithRSAEncryption','sha512','sha512WithRSAEncryption','shaWithRSAEncryption',l2-md5','ssl3-md5','ssl3-sha1','whirlpool' ]",
  		type :'String'
  	}
 }
