@@ -1,0 +1,20 @@
+{
+  "author": "Laukik Nirgudkar",
+  "email" : "laukiknirgudkar@gmail.com",
+  "name": "encryptojs",
+  "description": "Wrapper for creating hash using diffrent hashing algorithms...",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/laukik/encryptojs.git"
+  },
+  "main": "./lib/encrypto",
+  "keywords": [
+    "hash",
+    "crypto",
+    "security"
+  ],
+  "dependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
